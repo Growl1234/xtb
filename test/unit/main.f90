@@ -40,6 +40,7 @@ program tester
    use test_pbc_tools, only : collect_pbc_tools
    use test_peeq, only : collect_peeq
    use test_ptb, only: collect_ptb
+   use test_random, only : collect_random
    use test_repulsion, only : collect_repulsion
    use test_symmetry, only : collect_symmetry
    use test_tblite, only : collect_tblite
@@ -79,6 +80,7 @@ program tester
       new_testsuite("pbc-tools", collect_pbc_tools), &
       new_testsuite("peeq", collect_peeq), &
       new_testsuite("ptb", collect_ptb), &
+      new_testsuite("random", collect_random), &
       new_testsuite("repulsion", collect_repulsion), &
       new_testsuite("symmetry", collect_symmetry), &
       new_testsuite("tblite", collect_tblite), &
